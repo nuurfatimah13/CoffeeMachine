@@ -5,5 +5,3 @@ const coffeeStock = {
 }
  
 module.exports = coffeeStock;
-
-console.log(module)
