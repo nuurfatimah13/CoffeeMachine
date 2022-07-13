@@ -1,4 +1,4 @@
-const {coffeeStock, isCoffeeMachineReady} = require('./state');
+import {coffeeStock, isCoffeeMachineReady} from './state';
  
 const makeCoffee = (type, miligrams) => {
     if (coffeeStock[type] >= miligrams) {
@@ -7,8 +7,15 @@ const makeCoffee = (type, miligrams) => {
         console.log("Biji kopi habis!");
     }
 }
+
+const displayStock = stock => {
+    for (const type in stock) {
+        console.log(type);
+    }
+}
  
 makeCoffee("robusta", 80);
+displayStock(coffeeStock);
 
 // cetak isi coffeeStock & isCoffeeMachineReady
 console.log(coffeeStock);
