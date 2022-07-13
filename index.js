@@ -7,15 +7,8 @@ const makeCoffee = (type, miligrams) => {
         console.log("Biji kopi habis!");
     }
 }
-
-const displayStock = stock => {
-    for (const type in stock) {
-        console.log(type);
-    }
-}
  
 makeCoffee("robusta", 80);
-displayStock(coffeeStock);
 
 // cetak isi coffeeStock & isCoffeeMachineReady
 console.log(coffeeStock);
